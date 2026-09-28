@@ -1,0 +1,25 @@
+{
+ "b=0.5": {
+  "slope_vs_C": -0.9984645096541515,
+  "slope_vs_r": -1.0215977240005405,
+  "expected_slope_vs_r": -1.0,
+  "median_rel_error": 0.0036760948616718636
+ },
+ "b=1.0": {
+  "slope_vs_C": -1.003422254215989,
+  "slope_vs_r": -1.9325301048988834,
+  "expected_slope_vs_r": -2.0,
+  "median_rel_error": 0.006006313107908667
+ },
+ "b=1.5": {
+  "slope_vs_C": -0.9965712015641643,
+  "slope_vs_r": -2.8561402824265754,
+  "expected_slope_vs_r": -3.0,
+  "median_rel_error": 0.0051866944343892385
+ },
+ "coupled": {
+  "min_offdiag_normalized": -0.2432558719740222,
+  "fraction_negative": 1.0,
+  "corr_theory_measured": 0.9932280676167757
+ }
+}

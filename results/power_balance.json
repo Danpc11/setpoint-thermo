@@ -1,0 +1,27 @@
+{
+ "0.0": {
+  "max_rel_error_balance": 0.0025086113316302727,
+  "mean_hydraulic_share": 0.0,
+  "Phi_monotone": true
+ },
+ "0.01": {
+  "max_rel_error_balance": 0.0026533298628328428,
+  "mean_hydraulic_share": 0.007686747140326446,
+  "Phi_monotone": true
+ },
+ "0.1": {
+  "max_rel_error_balance": 0.0024338027998437317,
+  "mean_hydraulic_share": 0.19571141842448894,
+  "Phi_monotone": true
+ },
+ "0.3": {
+  "max_rel_error_balance": 0.001647396449348859,
+  "mean_hydraulic_share": 0.2825966946656632,
+  "Phi_monotone": true
+ },
+ "1.0": {
+  "max_rel_error_balance": 0.0021679790668883703,
+  "mean_hydraulic_share": 0.5253200248167688,
+  "Phi_monotone": true
+ }
+}
