@@ -16,12 +16,13 @@ the test suite.
 ## Installation
 
 ```bash
-git clone https://github.com/USER/vascular-remodeling-net.git
-cd vascular-remodeling-net
+git clone https://github.com/Danpc11/setpoint-thermo.git
+cd setpoint-thermo
 python -m pip install -e ".[test]"
 ```
 
-Requires Python ≥ 3.9 with NumPy, SciPy and Matplotlib.
+Requires Python ≥ 3.9 with NumPy, SciPy and Matplotlib. The Python package is imported as
+`vasctherm`.
 
 ## Reproducing the paper
 
@@ -53,13 +54,13 @@ For an edge $e$ with radius $r_e$ and length $\ell_e$, in reduced units,
 |---|---|
 | conductance | $w_e = r_e^4/\ell_e$ |
 | wall shear stress | $\tau_e = \lvert f_e\rvert/r_e^3$ |
-| maintenance cost | $C_e = r_e^{2b}\ell_e^{\,b}$, $\;C_b=\sum_e C_e = C_0$ |
-| composite functional | $\Phi = D + \lambda C_b$, $\;D=\sum_e f_e^2/w_e$ |
-| shear set-point | $\tau_{\rm set} = \sqrt{\lambda b/2}\; r_e^{\,b-1}\ell_e^{(b-1)/2}$ |
-| local rule | $\dot x_e = \kappa(z_e-1)$, $\;x_e=\ln r_e$, $\;z_e=\lvert\tau_e\rvert/\tau_{\rm set}$ |
-| structural force and mobility | $X_e = 2\lambda b\,C_e(z_e^2-1)$, $\;L_e = \kappa/[2\lambda b\,C_e(z_e+1)]$ |
-| Gaussian multiplier | $\sqrt{\lambda(t)} = \sum_e C_e s_e/\sum_e C_e$, $\;s_e=\sqrt{\lambda}\,z_e$ |
-| coupled mobility | $L^{\rm eff} = (\Gamma^{-1}+K)^{-1}$, $\;K = V'A_{\rm r}^{\mathsf T}L_{\rm r}^{-1}A_{\rm r}V'$ |
+| maintenance cost | $C_e = r_e^{2b}\ell_e^{b}$, $C_b=\sum_e C_e = C_0$ |
+| composite functional | $\Phi = D + \lambda C_b$, $D=\sum_e f_e^2/w_e$ |
+| shear set-point | $\tau_{\rm set} = \sqrt{\lambda b/2}\ r_e^{b-1}\ell_e^{(b-1)/2}$ |
+| local rule | $\dot x_e = \kappa(z_e-1)$, $x_e=\ln r_e$, $z_e=\lvert\tau_e\rvert/\tau_{\rm set}$ |
+| structural force and mobility | $X_e = 2\lambda b C_e(z_e^2-1)$, $L_e = \kappa/[2\lambda b C_e(z_e+1)]$ |
+| Gaussian multiplier | $\sqrt{\lambda(t)} = \sum_e C_e s_e/\sum_e C_e$, $s_e=\sqrt{\lambda} z_e$ |
+| coupled mobility | $L^{\rm eff} = (\Gamma^{-1}+K)^{-1}$, $K = V'A_{\rm r}^{\mathsf T}L_{\rm r}^{-1}A_{\rm r}V'$ |
 | conducted signal | $\dot x = (\mathbb I+\gamma G)L^{\rm eff}X + \xi$ |
 
 Networks are jittered square lattices with a single corner source and unit sink demands; a floor
@@ -93,4 +94,3 @@ figures/              PDF and PNG figures
 - the identity between $\dot x^{\mathsf T}K\dot x$ and the viscous dissipation of the induced flows (A.6);
 - vanishing of the housekeeping entropy production without conduction (A.10);
 - the transient budget violation of the quenched multiplier (Table 1).
-
