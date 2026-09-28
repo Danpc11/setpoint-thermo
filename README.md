@@ -3,8 +3,7 @@
 Companion code for
 
 > E. Hernández-Lemus and D. Pérez-Calixto, *A non-equilibrium thermodynamics formulation of shear
-> set-points in adaptively remodeling vascular networks*, submitted to the Journal of
-> Non-Equilibrium Thermodynamics (2026).
+> set-points in adaptively remodeling vascular networks*, (2026).
 
 The package implements the adaptive flow-network model of the paper (Poiseuille hydraulics, power-law
 maintenance cost, local shear-set-point rule) together with the quantities introduced by the
