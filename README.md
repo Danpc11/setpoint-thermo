@@ -94,10 +94,3 @@ figures/              PDF and PNG figures
 - vanishing of the housekeeping entropy production without conduction (A.10);
 - the transient budget violation of the quenched multiplier (Table 1).
 
-## Citation
-
-Please cite the article above; machine-readable metadata are in `CITATION.cff`.
-
-## License
-
-MIT (see `LICENSE`).
