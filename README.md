@@ -1,4 +1,4 @@
-# vasctherm
+# Vascular thermodynamics
 
 Companion code for
 
